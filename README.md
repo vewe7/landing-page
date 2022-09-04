@@ -1,0 +1,1 @@
+A simple landing page for the [Odin Project](https://www.theodinproject.com/lessons/foundations-recipes).
