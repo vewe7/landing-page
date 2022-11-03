@@ -3,25 +3,21 @@ body {
     font-family: 'Roboto', 'Montserrat', Arial;
     display: flex;
     flex-direction: column;
+    margin: 0px;
 }
 
 h2 {
     font-size: 48px;
     font-weight: extra-bold;
-    color: #F9FAF8
+    color: #F9FAF8;
+    margin: 0;
 }
 
 
 img {
-    width: 600px;
-    height: 200px;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
-}
-
-a {
-    text-decoration: none;
-    font-size: 18px;
-    color: #E5E7EB;
 }
 
 ul {
@@ -38,7 +34,12 @@ li {
 
 button {
     background-color: #3882F6;
-    color: white;
+    color: #F9FAF8;
+    border: none;
+    border-radius: 7px;
+    padding: 8px 35px;
+    margin-top: 10px;
+    font-size: 18px;
 }
 
 /* COLORS AND FONT */
@@ -53,21 +54,44 @@ button {
     color: #F9FAF8;
 }  
 
+a,
+.top-text {
+    text-decoration: none;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
 .top-content {
     color: #E5E7EB;
 }
 
 .info-header {
     font-size: 36px;
-    font-weight: extra-bold;
+    font-weight: bolder;
     color: #1F2937;
 }
 
 .quote {
     background-color: #E5E7EB;
     color: #1F2937;
+}
+
+.quote-right {
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: right;
+    width: 100%;
+}
+
+.quote-left {
     font-size: 36px;
+    font-weight: light;
     font-style: italic;
+}
+
+.bot {
+    color: white;
+    background-color: #3882F6;
 }
 
 /* FLEX AND BOXES */
@@ -75,10 +99,66 @@ button {
 .header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 0px 200px;
 }
 
 .top {
     display: flex;
+    padding: 100px 200px;
+}
+
+.top-content {
+    flex: 1 0 0;
+    flex-direction: column;
+    padding-right: 120px;
+}
+
+
+.image {
+    flex: 1 0 0;
+    height: 250px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.illustration {
+    width: 160px;
+    height: 160px;
+    border-color: #3882F6;
+    border-radius: 10px;
+    border-width: 4px;
+    border-style: solid;
+}
+
+.info-content {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.info-unit {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 160px;
+    font-size: 18px;
+    color: gray;
+    gap: 7px;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 300px;
 }
 
 .footer {
@@ -86,4 +166,23 @@ button {
     padding: 20px;
     color: white;
     font-size: 18px;
+}
+
+.bot {
+    display: flex;
+    margin: 80px 200px;
+    border-radius: 7px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 100px;
+}
+
+h3 {
+    margin: 0;
+}
+
+.bot .signup {
+    border-style: solid;
+    border-color: white;
+    height: 40px;
 }
